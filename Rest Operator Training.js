@@ -1,7 +1,5 @@
 // تمرین اول
-// function sumNumbers(/* اینجا چی باید باشه؟ */) {
-//     return /* چطور همه‌ی اعداد رو جمع کنیم؟ */;
-// }
+
 
 function sumNumbers(...numbers) {
     return numbers.reduce((sum, num) => sum + num, 0);
@@ -14,7 +12,7 @@ console.log(sumNumbers(10, 20, 30)); // باید 60 چاپ کنه
 // تمرین دوم
 // function introduce(/* اینجا چی باید باشه؟ */) {
 //     console.log(`Hi, I'm ${name} and my hobbies are ${hobbies}`);
-}
+
 // اول اسمشو جدا میگیریم بقیشم با یک رست میریزیم تو متغیر هابیس
 function introduce({name,...hobbies}) {
     console.log(`Hi, I'm ${name} and my hobbies are ${hobbies.join(", ")}`); // ✅ برای نمایش آرایه در console.log(), بهتره join(", ") استفاده بشه تا خروجی خواناتر بشه.
